@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A module contains a function that defines `index_range`"""
+"""This module defines the function `index_range`"""
 
 import csv
 import math
@@ -7,7 +7,7 @@ from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """Returning a tuple of size two containing a start index and an end index"""
+    """Returns a tuple of size two containing a start index and an end index"""
     start_index = page_size * (page - 1)
     end_index = page_size * page
 
@@ -20,7 +20,7 @@ class Server:
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
-        """Initializing the instance of Server"""
+        """Initializes the instance of Server"""
         self.__dataset = None
 
     def dataset(self) -> List[List]:
@@ -35,7 +35,7 @@ class Server:
         return self.__dataset
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
-        """Retrieving a specific "page" of data from the dataset"""
+        """Retrieve a specific "page" of data from the dataset"""
         assert isinstance(page, int) and isinstance(page_size, int)
         assert page > 0 and page_size > 0
 
@@ -44,7 +44,7 @@ class Server:
         return self.dataset()[start_index: end_index]
 
     def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
-        """Getting a dictionary containing information about the current page
+        """Get a dictionary containing information about the current page
            and pagination details
         """
         total_pages = math.ceil(len(self.dataset()) / page_size)
