@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""This module is defining the function `index_range`"""
+"""This module is define the function `index_range`"""
 
 import csv
 import math
