@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A module that contains a function defining `index_range`"""
+"""This module defines the function `index_range`"""
 
 import csv
 import math
@@ -7,7 +7,7 @@ from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """Returning a tuple of size two containing a start index and an end index"""
+    """Returns a tuple of size two containing a start index and an end index"""
     start_index = page_size * (page - 1)
     end_index = page_size * page
 
@@ -20,7 +20,7 @@ class Server:
     DATA_FILE = "Popular_Baby_Names.csv"
 
     def __init__(self):
-        """Initializing the instance of Server"""
+        """Initializes the instance of Server"""
         self.__dataset = None
 
     def dataset(self) -> List[List]:
