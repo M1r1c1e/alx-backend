@@ -8,10 +8,10 @@ from typing import List, Tuple
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     """Returning a tuple of size two containing a start index and an end index"""
-    start_idx = page_size * (page - 1)
-    end_idx = page_size * page
+    start_index = page_size * (page - 1)
+    end_index = page_size * page
 
-    return (start_idx, end_idx)
+    return (start_index, end_index)
 
 
 class Server:

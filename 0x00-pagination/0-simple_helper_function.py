@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""This module defines the function `index_range`"""
+"""This module contains function that define`index_range`"""
 
 
 def index_range(page, page_size):
