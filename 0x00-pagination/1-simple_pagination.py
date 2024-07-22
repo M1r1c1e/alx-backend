@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""This module defines the function `index_range`"""
+"""This function defines the  `index_range`"""
 
 import csv
 import math
@@ -7,7 +7,7 @@ from typing import List, Tuple
 
 
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
-    """Returns a tuple of size two containing a start index and an end index"""
+    """Returning a tuple of size two containing a start index and an end index"""
     start_index = page_size * (page - 1)
     end_index = page_size * page
 
